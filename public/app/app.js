@@ -1,16 +1,11 @@
 var app = angular.module("mean", ['ngRoute','ngResource']);
 
-
-
-
-
-
 app.config(['$routeProvider','$locationProvider',
   function($routeProvider,$locationProvider){
   	$locationProvider.html5Mode(true);
     $routeProvider
      .when('/',{
-        templateUrl : "/partials/main",
+        templateUrl : "/partials/main/main",
         controller : "mainCtrl"
       })
      .otherwise({
@@ -20,6 +15,3 @@ app.config(['$routeProvider','$locationProvider',
   }
   ]);
 
-app.controller('mainCtrl',function($scope){
-	$scope.myVar = "Hello Angular";
-})
