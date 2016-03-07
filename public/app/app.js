@@ -19,7 +19,7 @@ app.config(['$routeProvider','$locationProvider',
       })
      .when('/signup',{
         templateUrl : "/partials/account/signup",
-        controller : "mvSignupCntrl"
+        controller : "mvSignupCtrl"
       })
      .when('/admin/users',{
         templateUrl : "/partials/admin/user-list",
