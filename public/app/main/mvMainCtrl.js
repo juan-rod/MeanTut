@@ -1,4 +1,4 @@
-app.controller('mainCtrl',function($scope){
+angular.module('mean').controller('mainCtrl',function($scope){
 	$scope.courses=[
 		{name: 'C# for Sociopaths', featured: true, published: new Date('1/1/2016')},
 		{name: 'C# for Non-Sociopaths', featured: true, published: new Date('2/15/2016')},

@@ -1,4 +1,4 @@
-app.factory('mvIdentity',function($window, mvUser){
+angular.module('mean').factory('mvIdentity',function($window, mvUser){
 	var currentUser;
 	if(!!$window.bootstrappedUserObject){
 		currentUser = new mvUser;
